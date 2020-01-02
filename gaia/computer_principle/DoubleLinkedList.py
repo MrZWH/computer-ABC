@@ -47,8 +47,8 @@ class DoubleLinkedList:
             self.tail.prev = None
             self.tail.next = None
         else:
-            node.prev = self.tail
             self.tail.next = node
+            node.prev = self.tail
             self.tail = node
             self.tail.next = None
         self.size += 1
@@ -61,7 +61,7 @@ class DoubleLinkedList:
         node = self.tail
         if node.prev:
             self.tail = node.prev
-            self.tail.next = Node
+            self.tail.next = None
         else:
             self.tail = self.head = None
         self.size -= 1

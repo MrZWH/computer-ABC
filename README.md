@@ -447,8 +447,9 @@
       - ![双向链表](images/双向链表.png)
       - 实现参照<./gaia/computer_principle/DoubleLinkedList.py>
     - FIFO: 缓存置换算法，先进先出，淘汰缓存时，把最先进入链表的节点淘汰
-    - LFU
-    - LRU
+    - LFU：最不经常使用算法，淘汰缓存时，把使用频率最小的淘汰，同频率节点按FIFO算法淘汰
+      - ![LFU](images/LFU.png) 
+    - LRU：缓存置换算法，最近最少使用算法,淘汰缓存时，表链表尾部的节点淘汰
 - 操作系统
   - 基础篇
     - 进程管理
